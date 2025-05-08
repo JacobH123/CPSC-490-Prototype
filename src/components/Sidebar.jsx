@@ -12,10 +12,10 @@ export function Sidebar({ isOpen }) {
 
         <nav>
           <ul className="flex flex-col gap-4">
-            <li><Link to="/" className="hover:text-white">AI Assistant</Link></li>
-            <li className="hover:text-white cursor-pointer">Goals</li>
-            <li className="hover:text-white cursor-pointer">Budget Plans</li>
-            <li className="hover:text-white cursor-pointer">Trends</li>
+            <li><Link to="/aiassiant" className="hover:text-white">AI Assistant</Link></li>
+            <li><Link to="/goals" className="hover:text-white">Goals</Link></li>
+            <li><Link to="/budgets" className="hover:text-white">Budget Plans</Link></li>
+            <li><Link to="/trends" className="hover:text-white">Trends</Link></li>
             <li><Link to="/settings" className="hover:text-white">Settings</Link></li>
           </ul>
         </nav>
