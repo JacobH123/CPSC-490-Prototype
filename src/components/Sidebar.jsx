@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 
-export function Sidebar() {
+export function Sidebar({ isOpen }) {
     return (
-      <aside className="bg-gray-900 text-white w-64 p-4 flex flex-col gap-6 hidden md:flex rounded-lg">
+      <aside
+      className={`
+        bg-[#0d1117] text-white w-64 p-4 transition-all duration-300 ease-in-out border-r border-gray-500
+        ${isOpen ? "ml-0" : "-ml-64 "}
+      `}
+    >
+
 
         <nav>
           <ul className="flex flex-col gap-4">
