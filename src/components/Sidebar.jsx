@@ -2,28 +2,17 @@ export function Sidebar() {
     return (
       <aside className="bg-gray-900 text-gray-300 w-64 p-4 flex flex-col gap-6">
         <nav>
-          <ul className="flex flex-col gap-2">
-            <li className="hover:text-white cursor-pointer">Recent</li>
+          <ul className="flex flex-col gap-4">
+          <button className="w-8 h-8">
+          <img src="/icons/dashboard.png" alt="Dashboard" className="w-full h-full object-contain" />
+        </button>
+            <li className="hover:text-white cursor-pointer">AI Assistant</li>
+            <li className="hover:text-white cursor-pointer">Goals</li>
+            <li className="hover:text-white cursor-pointer">Budget Plans</li>
+            <li className="hover:text-white cursor-pointer">Trends</li>
             <li className="hover:text-white cursor-pointer">Settings</li>
-            <li className="hover:text-white cursor-pointer">Invite Members</li>
-            <li className="hover:text-white cursor-pointer">Upgrade</li>
           </ul>
         </nav>
-        <div>
-          <h2 className="text-sm uppercase text-gray-400">Repositories</h2>
-          <ul className="flex flex-col gap-2 mt-2">
-            <li className="hover:text-white cursor-pointer">All repositories</li>
-            <li className="hover:text-white cursor-pointer">My contributions</li>
-          </ul>
-        </div>
-        <div>
-          <h2 className="text-sm uppercase text-gray-400">Devboxes</h2>
-          <ul className="flex flex-col gap-2 mt-2">
-            <li className="hover:text-white cursor-pointer">Drafts</li>
-            <li className="hover:text-white cursor-pointer">All folders</li>
-            <li className="hover:text-white cursor-pointer">Recently deleted</li>
-          </ul>
-        </div>
       </aside>
     );
   }
