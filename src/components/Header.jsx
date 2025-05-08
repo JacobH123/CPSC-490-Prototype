@@ -1,24 +1,26 @@
 import { useState } from "react";
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { BellIcon, ChatBubbleBottomCenterTextIcon,ChartBarIcon  } from '@heroicons/react/24/solid';
-
+import { Link } from "react-router-dom";
 
 export function Header({ toggleSidebar }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-black text-white p-4 flex justify-between items-center rounded-lg h-16 border-b border-gray-500">
 
-      <button onClick={toggleSidebar} className="w-6 h-6 text-white">
-        <Bars3Icon />
-      </button>
+<div className="flex items-center">
+    <button onClick={toggleSidebar} className="w-6 h-6 text-white">
+      <Bars3Icon />
+    </button>
 
-      <button className="h-full flex items-center"> {/* Remove fixed width */}
-        <img 
-          src="/assets/dashboard.png" 
-          alt="Logo" 
-          className="h-full w-auto object-contain" /* Scales height, keeps aspect ratio */
-        />
-      </button>
+    <Link to="/" className="ml-4 flex items-center h-full">
+      <img 
+        src="/assets/dashboard.png" 
+        alt="Logo" 
+        className="h-10 w-auto object-contain" 
+      />
+    </Link>
+  </div>
 
       <div className="text-lg font-bold"></div>
       <div className="flex gap-4 items-center">
