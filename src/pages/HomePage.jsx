@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function HomePage() {
-  // Assume you have a way to fetch the current user's name
-  const currentUser = "John Doe"; // Replace with dynamic user info
+  
+  const currentUser = "John Doe"; // TODO add user data later
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-[#1a1a2e] via-black to-[#1a1a2e] text-white p-4">
