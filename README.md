@@ -2,8 +2,8 @@
 
 # Steps to demo the code
 
-*clone the repository
-*npm install
-*npm run dev
+* clone the repository
+* npm install
+* npm run dev
 
 
